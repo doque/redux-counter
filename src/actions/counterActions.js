@@ -1,12 +1,12 @@
 import * as types from "../constants/counterActionTypes";
 
-export const incremented = () => {
+export const increment = () => {
   return {
     type: types.INCREMENT
   };
 };
 
-export const decremented = () => {
+export const decrement = () => {
   return {
     type: types.DECREMENT
   };
