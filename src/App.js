@@ -23,3 +23,6 @@ const mapDispatchToProps = dispatch =>
   bindActionCreators({ decrement, increment }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+// For Testing, export unconnected Component
+export { App };
