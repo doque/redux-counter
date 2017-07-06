@@ -20,7 +20,12 @@ describe("Counter Reducer", () => {
   });
 
   it("handles DECREMENT correctly", () => {
-    // to be implemented
-    expect(true).toBe(false);
+    const decrementAction = {
+      type: types.DECREMENT
+    };
+
+    expect(counterReducer(undefined, decrementAction)).toEqual({
+      count: -1
+    });
   });
 });

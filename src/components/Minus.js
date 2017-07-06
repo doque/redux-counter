@@ -1,5 +1,6 @@
 import React from "react";
+import Button from "./styled/Button";
 
-const Minus = ({ decrement }) => <button onClick={decrement}>-</button>;
+const Minus = ({ decrement }) => <Button onClick={decrement}>-</Button>;
 
 export default Minus;

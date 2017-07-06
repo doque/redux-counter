@@ -1,9 +1,16 @@
 import React from "react";
+import styled from "styled-components";
 
-// <Counter count={ 3 } />
+const Div = styled.div`
+  width: 100px;
+  font: 40px Verdana;
+  text-align: center;
+  flex-grow: 1;
+`;
+
 const Counter = ({ count }) =>
-  <div>
-    Traalala {count}
-  </div>;
+  <Div>
+    {count}
+  </Div>;
 
 export default Counter;
