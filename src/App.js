@@ -3,17 +3,17 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { increment, decrement } from "./actions/counterActions";
 
-import Wrapper from "./components/styled/Wrapper";
+import CenteredDiv from "./components/styled/Wrapper";
 import Counter from "./components/Counter";
 import Plus from "./components/Plus";
 import Minus from "./components/Minus";
 
 const App = ({ count, decrement, increment }) =>
-  <Wrapper>
+  <CenteredDiv>
     <Minus decrement={decrement} />
     <Counter count={count} />
     <Plus increment={increment} />
-  </Wrapper>;
+  </CenteredDiv>;
 
 const mapStateToProps = state => ({
   count: state.count
