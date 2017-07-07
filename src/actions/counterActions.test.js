@@ -11,6 +11,10 @@ describe("counter action creator", function() {
   });
 
   it("creates the correct action decrement", () => {
-    expect(5).toBe(24);
+    const expected = {
+      type: types.DECREMENT
+    };
+
+    expect(decrement()).toEqual(expected);
   });
 });
